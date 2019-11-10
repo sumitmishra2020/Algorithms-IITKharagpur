@@ -6,6 +6,7 @@ Problem
 Solutions
 C
 C++
+C#
 Java
 Python3
 C
@@ -57,6 +58,25 @@ CPP
         Type ans = solution.gcd( a, b );
         cout << ans << endl;
         return 0;
+    }
+C#
+    class Program
+    {
+        static int GCD(int a, int b)
+        {
+            while(b != 0)
+            {
+                int t = b;
+                b = a % b;
+                a = t;
+            }
+            return a;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("The GCD of 56, 24 is: " + GCD(56, 24));
+        }
     }
 Java
     import java.util.Scanner;
